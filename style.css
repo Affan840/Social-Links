@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--Off-Black);
+    font-family: 'Inter';
+}
+
+#card{
+    width: 20vw;
+    height: auto;
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    margin: 10vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+#card img{
+    height: 100px;
+    border-radius: 50%;
+}
+#card h1{
+    margin-top: 1.5rem;
+}
+#card h3{
+    color: var(--Green);
+    margin: 1rem;
+}
+
+#card p{
+    margin-top: 2rem;
+    font-size: 17px;
+}
+
+.links{
+    margin-top: 1rem;
+    text-align: center;
+}
+.links h5{
+    font-size: 18px;
+    background-color: var(--Grey);
+    padding: 1.2rem 8rem;
+    margin: 1.2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.links h5:active{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
