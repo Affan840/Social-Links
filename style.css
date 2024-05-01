@@ -55,18 +55,60 @@ html , body{
 .links{
     margin-top: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .links h5{
-    font-size: 18px;
+    font-size: 1vw;
     background-color: var(--Grey);
-    padding: 1.2rem 8rem;
-    margin: 1.2rem;
+    padding: 1rem 2vw;
+    margin: .5rem;
     border-radius: .5rem;
     cursor: pointer;
     transition: all .3s;
+    width: 100%;
 }
 
 .links h5:active{
     background-color: var(--Green);
     color: var(--Off-Black);
+}
+
+@media (max-width:1400px) {
+    #card{
+        width: 30vw;
+    }
+
+    .links h5{
+        padding: 1rem 5vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width:900px) {
+    #card{
+        width: 40vw;
+    }
+    #card img{
+        height: 70px;
+    }
+
+    #card h1{
+        font-size: 3vw;
+    }
+    #card h3{
+        font-size: 2vw;
+    }
+    #card p{
+        margin-top: 1rem;
+        font-size: 1.5vw;
+    }
+    .links h5{
+        padding: .5rem 3vw;
+        font-size: 1.5vw;
+    }
+    .links{
+        margin-top: .5rem;
+    }
 }
